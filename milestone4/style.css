@@ -1,0 +1,196 @@
+body {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+header {
+    height: 141px;
+    background-color: #19183B;
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    display: flex;
+    align-items: center;
+    grid-column: 2 / 8;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 25px;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+nav {
+    height: 53px;
+    background-color: #708993;
+    color: #E7F2EF;
+    font-family: 'Jockey One', sans-serif;
+    font-size: large;
+    grid-column: 2 / 8;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E7F2EF;
+    display: block;
+    text-align: center;
+    padding: 14px 0rem;
+}
+
+/* .dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #708993;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.779);
+    min-width: 16.625%;
+}
+
+.dropdown:hover .content {
+    display: block;
+} */
+
+nav a:hover {
+    background-color: #94b3c0;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+#homehero1 {
+    background-image: url(./images/Velocicoaster.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 349px;
+    grid-column: 2 / 8;
+}
+
+#homecontent {
+    display: flex;
+    height: 498px;
+    background-color: #E7F2EF;
+    grid-column: 2 / 8;
+}
+
+#homecontent #contentbox1 {
+    width: 50%;
+    font-size: 16pt;
+    font-family: 'koulen', sans-serif;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 2px rgb(75, 75, 75);
+}
+
+#homecontent .funfact {
+    width: 50%;
+    font-size: 16pt;
+    font-family: 'koulen', sans-serif;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 2px rgb(75, 75, 75);
+}
+
+#homecontent .funfact #funfact {
+    display: flex;
+    margin-top: 1rem;
+}
+
+#homecontent .funfact #funfact p {
+    padding: 10px;
+}
+
+#homecontent .funfact #funfact-title {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#homecontent .funfact #funfact img {
+    max-width: 35%;
+}
+
+#homehero2 {
+    height: 301px;
+    background-image: url(./images/Wicked_cropped.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 8;
+}
+
+#interests {
+    background-color: #E7F2EF;
+    height: 290px;
+    grid-column: 2 / 8;
+}
+
+#interests #interests-title {
+    font-family: 'koulen', sans-serif;
+    font-size: 18pt;
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 20px;
+    min-width: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    justify-self: center;
+    text-align: center;
+}
+
+#interests .topics {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 16pt;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#interests .topics #topic1 {
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 25px;
+    min-height: 116px;
+    min-width: 25%;
+    margin: 20px;
+}
+
+#interests .topics #topic2 {
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 25px;
+    min-height: 116px;
+    min-width: 25%;
+    margin: 20px;
+}
+
+#interests .topics #topic3 {
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 25px;
+    min-height: 116px;
+    min-width: 25%;
+    margin: 20px;
+}
+
+
+footer {
+    border: 1px solid black;
+    height: 68px;
+    background-color: rgba(255, 251, 0, 0.3);
+    grid-column: 1 / 9;
+}
+
