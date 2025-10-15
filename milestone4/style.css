@@ -1,6 +1,7 @@
 body {
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    background: linear-gradient(#ffffff, #E7F2EF)
 }
 
 header {
@@ -39,7 +40,7 @@ nav a {
     padding: 14px 0rem;
 }
 
-/* .dropdown .content {
+.dropdown .content {
     display: none;
     position: absolute;
     background-color: #708993;
@@ -49,7 +50,7 @@ nav a {
 
 .dropdown:hover .content {
     display: block;
-} */
+}
 
 nav a:hover {
     background-color: #94b3c0;
@@ -92,7 +93,14 @@ nav ul li {
     padding: 15px;
     background-color: #D9D9D9;
     box-shadow: 2px 2px 2px rgb(75, 75, 75);
+    transition: ease-in 0.1s;
 }
+
+#homecontent #contentbox1:hover {
+    box-shadow: 2px 3px 3px rgb(42, 42, 42);
+    background-color: #e0e0e0;
+}
+
 
 #homecontent .funfact {
     width: 50%;
@@ -103,6 +111,12 @@ nav ul li {
     padding: 15px;
     background-color: #D9D9D9;
     box-shadow: 2px 2px 2px rgb(75, 75, 75);
+    transition: ease-in 0.1s;
+}
+
+#homecontent .funfact:hover {
+    box-shadow: 2px 3px 3px rgb(42, 42, 42);
+    background-color: #e0e0e0;
 }
 
 #homecontent .funfact #funfact {
@@ -159,6 +173,11 @@ nav ul li {
     justify-content: center;
 }
 
+#interests .topics a {
+    text-decoration: none;
+    color: black;
+}
+
 #interests .topics #topic1 {
     background-color: #D9D9D9;
     box-shadow: 2px 2px 2px black;
@@ -166,6 +185,7 @@ nav ul li {
     min-height: 116px;
     min-width: 25%;
     margin: 20px;
+    transition: ease-in-out 0.1s;
 }
 
 #interests .topics #topic2 {
@@ -175,6 +195,7 @@ nav ul li {
     min-height: 116px;
     min-width: 25%;
     margin: 20px;
+    transition: ease-in-out 0.1s;
 }
 
 #interests .topics #topic3 {
@@ -184,13 +205,26 @@ nav ul li {
     min-height: 116px;
     min-width: 25%;
     margin: 20px;
+    transition: ease-in-out 0.1s;
 }
 
+.topics #topic1:hover {
+    transform: translateY(-5px)
+}
+
+.topics #topic2:hover {
+    transform: translateY(-5px)
+}
+
+.topics #topic3:hover {
+    transform: translateY(-5px)
+}
 
 footer {
-    border: 1px solid black;
     height: 68px;
-    background-color: rgba(255, 251, 0, 0.3);
+    background-color:#E7F2EF;
+    font-style: italic;
+    text-align: center;
     grid-column: 1 / 9;
 }
 
