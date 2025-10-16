@@ -40,18 +40,6 @@ nav a {
     padding: 14px 0rem;
 }
 
-.dropdown .content {
-    display: none;
-    position: absolute;
-    background-color: #708993;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.779);
-    min-width: 16.625%;
-}
-
-.dropdown:hover .content {
-    display: block;
-}
-
 nav a:hover {
     background-color: #94b3c0;
 }
@@ -66,6 +54,18 @@ nav ul {
 
 nav ul li {
     width: 100%;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #708993;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.779);
+    min-width: 16.625%;
+}
+
+.dropdown:hover .content {
+    display: block;
 }
 
 #homehero1 {
@@ -84,56 +84,38 @@ nav ul li {
     grid-column: 2 / 8;
 }
 
-#homecontent #contentbox1 {
+.card {
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 2px rgb(75, 75, 75);
+    border-radius: 25px;
+    padding: 15px;
     width: 50%;
     font-size: 16pt;
     font-family: 'koulen', sans-serif;
     margin: 10px;
-    border-radius: 25px;
-    padding: 15px;
-    background-color: #D9D9D9;
-    box-shadow: 2px 2px 2px rgb(75, 75, 75);
     transition: ease-in 0.1s;
 }
 
-#homecontent #contentbox1:hover {
+.card:hover {
     box-shadow: 2px 3px 3px rgb(42, 42, 42);
     background-color: #e0e0e0;
 }
 
-
-#homecontent .funfact {
-    width: 50%;
-    font-size: 16pt;
-    font-family: 'koulen', sans-serif;
-    margin: 10px;
-    border-radius: 25px;
-    padding: 15px;
-    background-color: #D9D9D9;
-    box-shadow: 2px 2px 2px rgb(75, 75, 75);
-    transition: ease-in 0.1s;
-}
-
-#homecontent .funfact:hover {
-    box-shadow: 2px 3px 3px rgb(42, 42, 42);
-    background-color: #e0e0e0;
-}
-
-#homecontent .funfact #funfact {
+.funfact #funfact {
     display: flex;
     margin-top: 1rem;
 }
 
-#homecontent .funfact #funfact p {
+.funfact #funfact p {
     padding: 10px;
 }
 
-#homecontent .funfact #funfact-title {
+.funfact #funfact-title {
     text-decoration: underline;
     text-align: center;
 }
 
-#homecontent .funfact #funfact img {
+.funfact #funfact img {
     max-width: 35%;
 }
 
@@ -178,7 +160,7 @@ nav ul li {
     color: black;
 }
 
-#interests .topics #topic1 {
+.topic {
     background-color: #D9D9D9;
     box-shadow: 2px 2px 2px black;
     border-radius: 25px;
@@ -188,36 +170,8 @@ nav ul li {
     transition: ease-in-out 0.1s;
 }
 
-#interests .topics #topic2 {
-    background-color: #D9D9D9;
-    box-shadow: 2px 2px 2px black;
-    border-radius: 25px;
-    min-height: 116px;
-    min-width: 25%;
-    margin: 20px;
-    transition: ease-in-out 0.1s;
-}
-
-#interests .topics #topic3 {
-    background-color: #D9D9D9;
-    box-shadow: 2px 2px 2px black;
-    border-radius: 25px;
-    min-height: 116px;
-    min-width: 25%;
-    margin: 20px;
-    transition: ease-in-out 0.1s;
-}
-
-.topics #topic1:hover {
-    transform: translateY(-5px)
-}
-
-.topics #topic2:hover {
-    transform: translateY(-5px)
-}
-
-.topics #topic3:hover {
-    transform: translateY(-5px)
+.topic:hover {
+   transform: translateY(-5px) 
 }
 
 footer {
