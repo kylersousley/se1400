@@ -267,6 +267,10 @@ label {
         grid-column: 1 / 9;
     }
 
+    #alumnihero {
+        display: none;
+    }
+
     #homehero {
         display: none;
     }
