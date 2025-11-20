@@ -498,6 +498,10 @@ footer {
         grid-column: 1/8;
     }
 
+    .content-item:active {
+        animation: none;
+    }
+
     .content-item-items {
         flex-flow: column;
     }
