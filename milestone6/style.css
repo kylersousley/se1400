@@ -130,6 +130,27 @@ nav ul li {
     font-family: 'koulen', sans-serif;
 }
 
+.construction-content {
+    display: flex;
+    flex-flow: column;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    font-size: 24pt;
+    box-shadow: 2px 3px 3px rgb(209, 209, 209);
+    font-family: 'koulen', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+#under-construction {
+    width: 500px;
+}
+
 #p-content-smaller-text {
     font-size: 11pt;
 }
@@ -161,6 +182,27 @@ nav ul li {
     font-family: 'koulen', sans-serif;
     margin: 8px;
     justify-self: center;
+}
+
+.top10-content {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    font-size: 16pt;
+    background-color: #E7F2EF;
+    grid-column: 2/8;
+}
+
+#top10-title {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#top10-text {
+    width: 100%;
+    font-size: 18pt;
+    text-align: center;
+    height: auto;
 }
 
 .content-item {
@@ -444,6 +486,10 @@ footer {
 
     .content-item-items {
         flex-flow: column;
+    }
+
+    .top10-content {
+        grid-column: 1/8;
     }
 
     .card {
