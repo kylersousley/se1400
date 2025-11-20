@@ -188,7 +188,7 @@ nav ul li {
     display: flex;
     flex-flow: column;
     height: auto;
-    font-size: 16pt;
+    font-size: 18pt;
     background-color: #E7F2EF;
     grid-column: 2/8;
 }
@@ -203,6 +203,15 @@ nav ul li {
     font-size: 18pt;
     text-align: center;
     height: auto;
+}
+
+#rank {
+   list-style-type: none; 
+}
+
+#rank li {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .content-item {
@@ -233,6 +242,10 @@ nav ul li {
 
 .content-item:active {
     animation: loop 2s ease-in-out;
+}
+
+#top10-list:active {
+    animation: none;
 }
 
 .content-item-items {
